@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.heading{
+    margin: 15px 0;
+    font-weight: 800;
+}
+.card__container{
+    display: flex;
+    margin: 20px auto;
+}
+.description{
+    text-align: center;
+    max-width: 800px;
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn{
+    cursor: pointer;
+    width: 250px;
+    padding: 15px 0;
+    background-color: #f47625;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
