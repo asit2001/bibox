@@ -7,8 +7,8 @@ function Home() {
     <div className={style.container}>
       <h1 className={style.heading}>Build You PC Online | Customize Your PC</h1>
       <div className={style.card__container}>
-        {data.slice(0, 5).map((el) => (
-          <Card key={el.name} data={el} />
+        {data.slice(0, 5).map((el,i) => (
+          <Card key={i} data={el} />
         ))}
       </div>
       <p className={style.description}>
