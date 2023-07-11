@@ -3,12 +3,12 @@ import { DragDropContext, DropResult, Droppable } from "react-beautiful-dnd";
 import style from "./styles/home.module.css";
 import { DataType } from "../data";
 import Item from "../components/Item";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function PartAssemblyPage() {
   const {state} = useLocation() as {state:DataType[]}
   const items =   useMemo(() => state?.filter(({selected})=>selected), [state])
-
+  const navigate = useNavigate();
   const [data, setData] = useState<DataType[]>(items||[]);
   const [selectedList, setSelectedList] = useState<DataType[]>([]);
 
@@ -40,10 +40,11 @@ function PartAssemblyPage() {
               <ul className={style.componentsList} {...provided.droppableProps} ref={provided.innerRef}>
                 {data.map((item, index) => {
                   return (
-                   <Item key={item.id} data={item} index={index}/> 
-                  )
-                })}
+                    <Item key={item.id} data={item} index={index}/> 
+                    )
+                  })}
                 {provided.placeholder}
+              {(!data || data.length===0) && <h3 className={style.drop}>Drop hear to unselect</h3> }
               </ul>
             )}
           </Droppable>
@@ -56,11 +57,13 @@ function PartAssemblyPage() {
                   )
                 })}
                 {provided.placeholder}
+              {(selectedList.length===0) && <h3 className={style.drop}>Drop hear to select</h3> }
               </ul>
             )}
           </Droppable>
         </DragDropContext>
       </div>
+      <button disabled={selectedList.length===0} className={style.btn} onClick={()=>navigate("/final",{state:selectedList})}>Next</button>
     </div>
   );
 }

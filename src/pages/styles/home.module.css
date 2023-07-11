@@ -34,6 +34,12 @@
     text-align: center;
     text-decoration: none;
     margin: 20px 0;
+    border: none;
+    outline: none;
+}
+.btn:disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 .dnd__container{
     display: flex;
@@ -42,15 +48,28 @@
 .componentsList{
     flex: 0.3;
     overflow-y: scroll;
-    max-height: 90vh;
+    max-height: calc(80vh - 20px);
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.componentsList:has(.drop){
+    justify-content: center;
 }
 .selectedList{
     flex: 1;
     overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(3,auto);
-    place-items: center;
+    justify-content: center;
+    max-height: calc(80vh - 20px);
+}
+.selectedList:has(.drop){
+    align-items: center;
+}
+.drop{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #7a7a7a;
+    text-align: center;
 }

@@ -1,0 +1,31 @@
+
+.heading{
+    margin: 20px 0;
+    text-align: center;
+}
+.card__container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 10px;
+}
+@media screen and (max-width:1000px ) {
+    .container{
+        padding: 15px;
+    }
+    .card__container{
+        grid-template-columns: repeat(3,auto);
+    }
+}
+@media screen and (max-width:800px ) {
+
+    .card__container{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+@media screen and (max-width:550px ) {
+
+    .card__container{
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+    }
+}
