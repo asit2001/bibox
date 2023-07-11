@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.heading{
+    text-align: center;
+    margin: 20px 0;
+}
+.card__container{
+    display: flex;
+    margin: 20px 0;
+    overflow-x: scroll;
+    gap: 10px;
+}
+.card,.card__selected{
+    cursor: pointer;
+    padding: 10px;
+    width: 250px;
+}
+.card img,.card__selected img{
+    width: 230px;
+}
+.card__selected p{
+    color: #fff;
+}
+.card__selected{
+    background-color: #f47625;
+}
+.btn{
+    cursor: pointer;
+    width: 250px;
+    padding: 15px 0;
+    background-color: #ca672a;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: 20px auto;
+    display: block;
+    transition: all ease-in-out 0.3s;
+}
+.btn:hover{
+    background-color: #f47625;
+}
