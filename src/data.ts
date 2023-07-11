@@ -1,39 +1,264 @@
 const data: DataType[] = [
-    {
-        url:"https://www.pcstudio.in/wp-content/uploads/2022/03/Ant-Esports-690-Air-ARGB-E-ATX-Cabinet-Black-1.jpg",
-        type:"cabinet",
-        name:"Ant Esports 690 Air"
-    },
-    {
-        url:"https://www.pcstudio.in/wp-content/uploads/2022/08/Adata-XPG-Starker-Air-ARGB-ATX-Cabinet-Black-1.webp",
-        type:"cabinet",
-        name:"Adata XPG Starker Air"
-    },
-    {
-        url:"https://www.pcstudio.in/wp-content/uploads/2022/08/Adata-XPG-Starker-Air-ARGB-ATX-Cabinet-Black-1.webp",
-        type:"cabinet",
-        name:"Ant Esports 690 Air"
-    },
-    {
-        url:"https://www.pcstudio.in/wp-content/uploads/2022/01/Ant-Esports-510-Air-ARGB-Black-1.jpg",
-        type:"cabinet",
-        name:"Ant Esports 510 Air"
-    },
-    {
-        url:"https://www.pcstudio.in/wp-content/uploads/2022/11/ice-100-black-image_main-600x600-1.webp",
-        type:"cabinet",
-        name:"Adata XPG Starker 390"
-    },
-]
-
-
+  {
+    id: "724e99b8",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/03/Ant-Esports-690-Air-ARGB-E-ATX-Cabinet-Black-1.jpg",
+    type: "cabinet",
+    name: "Ant Esports 690 Air",
+    selected: false,
+  },
+  {
+    id: "5f2c98b1",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/08/Adata-XPG-Starker-Air-ARGB-ATX-Cabinet-Black-1.webp",
+    type: "cabinet",
+    name: "Adata XPG Starker Air",
+    selected: false,
+  },
+  {
+    id: "8d94a2f7",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/08/Adata-XPG-Starker-Air-ARGB-ATX-Cabinet-Black-1.webp",
+    type: "cabinet",
+    name: "Ant Esports 690 Air",
+    selected: false,
+  },
+  {
+    id: "12a37d85",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/01/Ant-Esports-510-Air-ARGB-Black-1.jpg",
+    type: "cabinet",
+    name: "Ant Esports 510 Air",
+    selected: false,
+  },
+  {
+    id: "f46e9a3d",
+    url: "https://www.pcstudio.in/wp-content/uploads/2020/10/Corsair-4000D-Airflow-Cabinet-Black-1.jpg",
+    type: "cabinet",
+    name: "Corsair 4000D",
+    selected: false,
+  },
+  {
+    id: "f520ae6e",
+    url: "https://www.pcstudio.in/wp-content/uploads/2020/12/Corsair-4000D-Airflow-Cabinet-White-1.jpg",
+    type: "cabinet",
+    name: "Corsair 4000D",
+    selected: false,
+  },
+  {
+    id: "3e8c78d0",
+    url: "https://www.pcstudio.in/wp-content/uploads/2021/04/CORSAIR-5000D-AIRFLOW-MID-TOWER-CASE-WHITE-1.jpg",
+    type: "cabinet",
+    name: "CORSAIR 5000D",
+    selected: false,
+  },
+  {
+    id: "d48d6ae1",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/08/Adata-XPG-Defender-Pro-ARGB-Mid-Tower-Cabinet-Black-1.webp",
+    type: "cabinet",
+    name: "Adata XPG Defender",
+    selected: false,
+  },
+  {
+    id: "6a9d5f47",
+    url: "https://www.pcstudio.in/wp-content/uploads/2023/01/Galax-Revolution-Micro-Atx-Mid-Tower-Cabinet-Black-1.jpg",
+    type: "cabinet",
+    name: "Galax-Revolution",
+    selected: false,
+  },
+  {
+    id: "df7a8112",
+    url: "https://www.pcstudio.in/wp-content/uploads/2020/04/AMD-RYZEN-3-3200G-1.jpg",
+    name: "amd ryzen 3 3200g",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "89df71bf",
+    url: "https://www.pcstudio.in/wp-content/uploads/2019/11/AMD-RYZEN-5-3500-PROCESSOR-UPTO-4.1-GHZ-16-MB-CACHENew.jpg",
+    name: "amd ryzen 5 3500 processor",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "7b8e623c",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/06/AMD-Ryzen-5-4600G-Processor-With-Radeon-Graphics-1.jpg",
+    name: "Amd Ryzen 5 4600g Processor With Radeon Graphics (100-100000147Box)",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "26cf9e90",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/04/AMD-RYZEN-5-5500-PROCESSOR-1.jpg",
+    name: "AMD RYZEN 5 5500 DESKTOP PROCESSOR (UPTO 4.2GHZ 19MB CACHE) (100-100000457BOX)",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "f31a6e52",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/05/AMD-Ryzen-5-5600-Desktop-Processor-1.jpg",
+    name: "AMD RYZEN 5 5600 DESKTOP PROCESSOR (UP TO 3.5GHZ) (100-100000927BOX)",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "c5be1d99",
+    url: "https://www.pcstudio.in/wp-content/uploads/2021/08/Ryzen-AMD-5-5600G-AMD-Ryzen-5-5000-G-Series-Desktop-Processors-with-Radeon-Graphics-1.jpg",
+    name: "RYZEN AMD 5 5600G AMD RYZEN 5 5000 G-SERIES DESKTOP PROCESSORS WITH RADEON GRAPHICS",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "8f43d21a",
+    url: "https://www.pcstudio.in/wp-content/uploads/2020/11/Amd-Ryzen-5-5600X-Processor-1.jpg",
+    name: "AMD RYZEN 5 5600X PROCESSOR (100-100000065BOX)",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "a5b60e8f",
+    url: "https://www.pcstudio.in/wp-content/uploads/2023/01/Amd-Ryzen-5-7600-Gaming-Desktop-Processor-1.jpg",
+    name: "Amd Ryzen 5 7600 Gaming Desktop Processor (100-100001015BOX)",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "4c2f1638",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/09/Amd-Ryzen-5-7600X-Processor-With-Radeon-Graphics-1.webp",
+    name: "Amd Ryzen 5 7600X Desktop Processor (Up to 5.3 Ghz) (100-100000593WOF)",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "ef4d5d80",
+    url: "https://www.pcstudio.in/wp-content/uploads/2020/08/AMD-RYZEN-7-3800XT-PROCESSOR-1.jpg",
+    name: "AMD RYZEN 7 3800XT PROCESSOR (Ryzen 7 3800XT)",
+    type: "cpu",
+    selected: false,
+  },
+  {
+    id: "ca91a772",
+    url: "https://www.pcstudio.in/wp-content/uploads/2021/01/Asrock-B550-Taichi-Wi-Fi-Motherboard-1.jpg",
+    name: "ASROCK B550 TAICHI (WI-FI) ATX AMD AM4 MOTHERBOARD",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "a779a257",
+    url: "https://www.pcstudio.in/wp-content/uploads/2021/11/ASRock-B550-Taichi-Razer-Edition-Motherboard-1.jpg",
+    name: "ASROCK B550 TAICHI RAZER EDITION AMD AM4 ATX MOTHERBOARD (90-MXBEN0-A0IAYZ)",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "c8b9a1c1",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/11/ASRock-B650-Pro-Rs-Motherboard-1.webp",
+    name: "Asrock B650 Pro Rs Am5 Atx Motherboard (B650-PRO-RS)",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "e70fa7b0",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/11/ASRock-B650E-Steel-Legend-Wifi-Motherboard-1.webp",
+    name: "Asrock B650E Steel Legend Wifi Am5 Atx Motherboard (B650E-STEEL-LEGEND-WIFI)",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "3f34b4e6",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/11/ASRock-B660-Pro-RS-Motherboard-1.webp",
+    name: "Asrock B660 Pro Rs Lga1700 Atx Motherboard (B660-PRO-RS)",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "e89d1aa5",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/11/ASRock-B660-Steel-Legend-Motherboard-1.webp",
+    name: "Asrock B660 Steel Legend Lga1700 Atx Motherboard (B660-STEEL-LEGEND)",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "5e7fb620",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/11/ASRock-B660M-ITX-AC-WiFi-Motherboard-1.webp",
+    name: "Asrock B660M Itx/Ac Wifi Lga1700 Mini-Itx Motherboard (B660M-ITX-AC)",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "208fa304",
+    url: "https://www.pcstudio.in/wp-content/uploads/2023/06/ASRock-B760M-PG-Sonic-WiFi-Motherboard-1.webp",
+    name: "ASRock-B760M-PG-Sonic-WiFi-Motherboard-1",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "9e4f7b88",
+    url: "https://www.pcstudio.in/wp-content/uploads/2023/01/AsRock-B760M-Steel-Legend-Wifi-Motherboard-1.jpg",
+    name: "AsRock B760M Steel Legend Wifi Lga1700 Micro Atx Motherboard (B760M-Steel-Legend-WiFi)",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "35fa6ab9",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/09/AsRock-X670E-Pro-RS-Motherboard-1.jpg",
+    name: "AsRock X670E Pro RS AM5 ATX Motherboard (X670E-Pro-RS)",
+    type: "motherboard",
+    selected: false,
+  },
+  {
+    id: "7a1a6d81",
+    url: "https://www.pcstudio.in/wp-content/uploads/2021/12/ADATA-Premier-DDR5-4800MHz-16G-UDIMM-Desktop-RAM-1.jpg",
+    name: "ADATA PREMIER DDR5 16GB 4800MHZ UDIMM DESKTOP RAM (AD5U480016G-R)",
+    type: "ram",
+    selected: false,
+  },
+  {
+    id: "f0d86e4c",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/05/Adata-XPG-Caster-RGB-16GB-16GBx1-DDR5-6000MHz-RAM-Tungsten-Grey-1.jpg",
+    name: "ADATA XPG CASTER RGB 16GB (16GBx1) DDR5 6000MHz RAM (TUNGSTEN GREY) (AX5U6000C4016G-CCARGY)",
+    type: "ram",
+    selected: false,
+  },
+  {
+    id: "7a64a70f",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/08/Adata-XPG-Gammix-D20-32GB-32GBx1-DDR4-3200MHz-Desktop-Ram-1.webp",
+    name: "Adata Xpg Gammix D20 32Gb (32GBx1) Ddr4 3200MHz Desktop Ram (AX4U320038G16A-ST20)",
+    type: "ram",
+    selected: false,
+  },
+  {
+    id: "31fbf974",
+    url: "https://www.pcstudio.in/wp-content/uploads/2023/02/Adata-Xpg-Lancer-16GB-16GBx1-DDR5-5200MHz-Desktop-Ram-Black-1.webp",
+    name: "Adata Xpg Gammix D30 32Gb (32GBx1) Ddr4 3600MHz Desktop Ram (AX4U360038G18A-ST30)",
+    type: "ram",
+    selected: false,
+  },
+  {
+    id: "d32f6a8d",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/02/ADATA-XPG-Lancer-16GB-1x16GB-DDR5-5200MHz-RGB-Ram-1-1.jpg",
+    name: "ADATA XPG SPECTRIX D60G 16GB (16GBx1) DDR4 3200MHz Desktop RAM (AX4U320038G16-SRD60)",
+    type: "ram",
+    selected: false,
+  },
+  {
+    id: "4f6e89aa",
+    url: "https://www.pcstudio.in/wp-content/uploads/2022/02/ADATA-XPG-Lancer-16GB-1x16GB-DDR5-6000MHz-RGB-Ram-1-2.jpg",
+    name: "ADATA XPG SPECTRIX D50 8GB (8GBx1) DDR4 3200MHz Desktop RAM (AX4U320038G16-ST50)",
+    type: "ram",
+    selected: false,
+  },
+  {
+    id: "9ac0b320",
+    url: "https://www.pcstudio.in/wp-content/uploads/2023/06/Adata-Xpg-Lancer-32GB-32GBx1-Ddr5-5600MHz-Desktop-Ram-Black-1.webp",
+    name: "ADATA XPG SPECTRIX D60G 32GB (32GBx1) DDR4 3600MHz Desktop RAM (AX4U360038G18A-ST60)",
+    type: "ram",
+    selected: false,
+  },
+];
 
 export default data;
 
-
-
-export interface DataType{
-    url:string,
-    type:"cabinet"|"ram"|"cpu"|"motherboard"| "storage"
-    name:string
+export interface DataType {
+  id:string,
+  url: string;
+  type: "cabinet" | "ram" | "cpu" | "motherboard" | "storage";
+  name: string;
+  selected:boolean
 }
