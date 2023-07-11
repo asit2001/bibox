@@ -22,7 +22,7 @@ function PartsSelectionPage() {
                 pcData.map((el,i)=><Card onClick={()=>handelClick(i)} className={el.selected?style.card__selected:style.card} key={i} data={el}/>)
             }
         </div>
-        <button onClick={()=>navigate("/",{state:pcData})} className={style.btn}>Next</button>
+        <button onClick={()=>navigate("/part-assembly",{state:pcData})} className={style.btn}>Next</button>
     </div>
   )
 }
