@@ -2,12 +2,17 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 
 import './App.css'
 import Home from './pages/home'
+import PartsSelectionPage from './pages/PartsSelectionPage'
 
 function App() {
   const router = createBrowserRouter([
     {
       path:"/",
       element:<Home/>
+    },
+    {
+      path:"/assembly-area",
+      element:<PartsSelectionPage/>
     }
   ])
 
