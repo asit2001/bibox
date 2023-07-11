@@ -11,8 +11,11 @@ function App() {
       element:<Home/>
     },
     {
-      path:"/assembly-area",
+      path:"/part-selection",
       element:<PartsSelectionPage/>
+    },{
+      path:"/part-assembly",
+
     }
   ])
 

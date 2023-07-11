@@ -18,7 +18,7 @@ function Home() {
         allows you to handpick each component, ensuring a tailored and
         high-performance computing experience.
       </p>
-      <Link to={"/assembly-area"} className={style.btn}>Start</Link>
+      <Link to={"/part-selection"} className={style.btn}>Start</Link>
     </div>
   );
 }
