@@ -35,3 +35,22 @@
     text-decoration: none;
     margin: 20px 0;
 }
+.dnd__container{
+    display: flex;
+    width: 100%;
+}
+.componentsList{
+    flex: 0.3;
+    overflow-y: scroll;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.selectedList{
+    flex: 1;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    place-items: center;
+}
