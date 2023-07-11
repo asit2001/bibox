@@ -3,6 +3,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import './App.css'
 import Home from './pages/home'
 import PartsSelectionPage from './pages/PartsSelectionPage'
+import PartAssemblyPage from './pages/PartAssemblyPage'
 
 function App() {
   const router = createBrowserRouter([
@@ -15,7 +16,7 @@ function App() {
       element:<PartsSelectionPage/>
     },{
       path:"/part-assembly",
-
+      element:<PartAssemblyPage/>
     }
   ])
 
